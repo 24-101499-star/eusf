@@ -1,5 +1,5 @@
 
-/* GENERAL */
+
 
 * {
     margin: 0;
@@ -26,9 +26,10 @@ button {
     border: none;
     cursor: pointer;
     font-family: Arial, sans-serif;
+    position: relative;
 }
 
-/* HEADER */
+
 
 .header {
     width: 100%;
@@ -38,9 +39,23 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 18px;
-    background-color: #080d14;
+    position: fixed;
     color: white;
+    z-index: 1;
+    animation: headerScroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0px 100px;
+    
 }
+
+@keyframes headerScroll {
+    to {
+        background-color: #000000;
+        height: 75px; 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+}
+
 
 .logo {
     width: 200px;
@@ -71,7 +86,7 @@ button {
     color: #ff0033;
 }
 
-#nav-news {
+#nav-home {
     color: #ff0033;
     border-bottom: 2px solid #ff0033;
     padding-bottom: 12px;
@@ -87,7 +102,7 @@ button {
     white-space: nowrap;
 }
 
-/* HERO */
+
 
 .hero {
     height: 275px;
@@ -237,7 +252,7 @@ button {
     box-shadow: 0 10px 28px rgba(0,0,0,0.14);
 }
 
-/* BROWSE NEWS */
+
 
 .browse-news {
     padding: 65px 5% 80px;
@@ -381,7 +396,7 @@ button {
     color: white;
 }
 
-/* TIMELINE */
+
 
 .timeline {
     padding: 65px 5% 80px;
@@ -568,3 +583,139 @@ button {
     align-items: center;
     justify-content: center;
 }
+/* ////////// */
+
+
+.he-ro {
+    height: 100vh; 
+    width: 100%;
+    background-image: url('img-habiba/Untitled\ project.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+   align-items: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+
+
+
+.hero-content{
+    position: absolute;
+    text-align: left;
+     padding: 60px;
+
+}
+
+
+
+h1{
+    font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+    
+    font-size: 140px;        
+    font-weight: 900;          
+
+    line-height: 0.92;     
+    letter-spacing: 0.5px;   
+    
+    text-transform: uppercase;
+    color: #ffffff;           
+    
+
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+.highlight-red{
+    color: #ff1e27;
+}
+
+
+#min {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;           
+    font-weight: 700;          
+    
+
+    color: var(--text-white, #ffffff);
+    text-transform: uppercase;  
+    
+
+    line-height: 1.2;         
+    letter-spacing: 1.2px;     
+
+   margin-left: 10px;         
+    margin-bottom: 0;
+}
+
+#p-h {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #d0d0d0;           
+    line-height: 1.5;
+    max-width: 480px;         
+    margin-top: 10px;
+    margin-bottom: 24px;
+    margin-left: 10px;
+}
+
+#btn-h {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 38px;
+    
+    font-family:'Bebas Neue';
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+  
+    background: rgba(255, 30, 39, 0.1);    
+    border: 2px solid #ff1e27;                  
+    border-radius: 50px;                        
+    
+    cursor: pointer;
+    overflow: hidden;                         
+    box-shadow: 0 0 15px rgba(255, 30, 39, 0.35); 
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#btn-h::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transition: left 0.6s ease;
+}
+#btn-h:hover {
+    background-color: #ff1e27;                  
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(255, 30, 39, 0.8), 
+                0 0 45px rgba(255, 30, 39, 0.4);  
+    transform: translateY(-3px) scale(1.03);      
+}
+
+#btn-h:hover::before {
+    left: 100%;         
+}
+
