@@ -81,6 +81,49 @@
       
     </section>
 
+   <section class="s-3">
+    <div class="championships-container">
+        <div class="championships-info">
+            <h3 id="champ-tag"></h3>
+            <h2 id="champ-title"></h2>
+            <p id="champ-desc"></p>
+            
+           
+        </div>
+
+        <div class="championships-cards" id="championships-container"></div>
+    </div>
+</section>
+
+
+
+<section class="s-4">
+    <div class="nextgen-container">
+        <span id="gen-tag"></span>
+        <h2 id="gen-title"></h2>
+        <p id="gen-desc"></p>
+        <a href="#" class="gen-btn" id="gen-btn"></a>
+    </div>
+</section>
+
+
+<section class="s-athletes">
+
+  <section class="s-athletes">
+    <!-- الهيدر العلوي -->
+    <div class="athletes-header">
+        <div class="header-left">
+            <span id="athletes-tag" class="athletes-tag"></span>
+            <h2 id="athletes-title" class="athletes-title"></h2>
+        </div>
+        <a href="#" id="view-all-link" class="view-all-link"></a>
+    </div>
+
+   
+    <div id="athletes-grid" class="athletes-grid"></div>
+</section>
+   
+</section>
 
 
 
@@ -93,7 +136,6 @@
 
 </main>
 
-<!-- FOOTER
 
 <footer class="footer">
 
@@ -135,11 +177,28 @@
         </ul>
     </div>
 
-</footer> -->
+</footer>
 
 <!-- JAVASCRIPT -->
 
 <script>
+
+    
+
+
+
+let nextGenData = {
+    tag: "THE NEXT GENERATION",
+    title: "YOUNG TALENT.<br>BIGGER DREAMS.",
+    desc: "Supporting student athletes across Egypt's universities and empowering them to reach their full potential.",
+    btnText: "JOIN OUR COMMUNITY"
+};
+
+
+document.getElementById("gen-tag").innerText = nextGenData.tag;
+document.getElementById("gen-title").innerHTML = nextGenData.title;
+document.getElementById("gen-desc").innerText = nextGenData.desc;
+document.getElementById("gen-btn").innerText = nextGenData.btnText
 
 let sportsData = [
     { name: "FOOTBALL", img: "img-habiba/football.jpg" },
@@ -198,6 +257,78 @@ document.getElementById("sports-container-4").innerHTML = `
     <div class="card-content">
         <span class="sport-name">${sportsData[4].name}</span>
         <span class="sport-arrow">→</span>
+    </div>
+`;
+
+
+
+document.getElementById("champ-tag").innerText = "UPCOMING CHAMPIONSHIPS";
+document.getElementById("champ-title").innerHTML = "EGYPTIAN UNIVERSITY<br>CHAMPIONSHIPS";
+document.getElementById("champ-desc").innerText = "The Egyptian Universities Sports Federation organizes a wide range of championships and tournaments throughout the year.";
+
+
+let championshipsData = [
+    {
+        title: "UNIVERSITY OLYMPICS",
+        date: "12 - 16 NOV 2025",
+        location: "Cairo, Egypt",
+        img: "img-habiba/championship1.jpg"
+    },
+    {
+        title: "BASKETBALL CHAMPIONSHIP",
+        date: "03 - 08 DEC 2025",
+        location: "Cairo, Egypt",
+        img: "img-habiba/championship2.jpg"
+    },
+    {
+        title: "ATHLETICS CHAMPIONSHIP",
+        date: "15 - 21 JAN 2026",
+        location: "Cairo, Egypt",
+        img: "img-habiba/championship3.jpg"
+    }
+];
+
+document.getElementById("championships-container").innerHTML = `
+
+    <div class="champ-card">
+        <div class="champ-img-box">
+            <img src="${championshipsData[0].img}" alt="${championshipsData[0].title}">
+        </div>
+        <div class="champ-card-body">
+            <span class="champ-date">${championshipsData[0].date}</span>
+            <h4 class="champ-card-title">${championshipsData[0].title}</h4>
+            <div class="champ-card-footer">
+                <span class="champ-location">${championshipsData[0].location}</span>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="champ-card">
+        <div class="champ-img-box">
+            <img src="${championshipsData[1].img}" alt="${championshipsData[1].title}">
+        </div>
+        <div class="champ-card-body">
+            <span class="champ-date">${championshipsData[1].date}</span>
+            <h4 class="champ-card-title">${championshipsData[1].title}</h4>
+            <div class="champ-card-footer">
+                <span class="champ-location">${championshipsData[1].location}</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="champ-card">
+        <div class="champ-img-box">
+            <img src="${championshipsData[2].img}" alt="${championshipsData[2].title}">
+        </div>
+        <div class="champ-card-body">
+            <span class="champ-date">${championshipsData[2].date}</span>
+            <h4 class="champ-card-title">${championshipsData[2].title}</h4>
+            <div class="champ-card-footer">
+                <span class="champ-location">${championshipsData[2].location}</span>
+            </div>
+        </div>
     </div>
 `;
     document.getElementById("sup-2").innerText = "OUR SPORTS";
@@ -360,6 +491,119 @@ document.getElementById("twitter").innerHTML = "X";
 document.getElementById("youtube").innerHTML = "▶";
 document.getElementById("instagram").innerHTML = "◎";
 
+</script>
+
+
+<script>
+
+
+document.getElementById("athletes-tag").innerText = "ATHLETES";
+document.getElementById("athletes-title").innerText = "MEET OUR ATHLETES";
+document.getElementById("view-all-link").innerText = "VIEW ALL ATHLETES";
+let athletes = [
+    {
+        name: "Ahmed Elgendy",
+        prog: "Modern Pentathlon",
+        desc: "Olympic Gold & Silver medalist",
+        country: "Egypt",
+        image: "img-habiba/ahmed_elgendy.jpg"
+    },
+    {
+        name: "Hana Goda",
+        prog: "Table Tennis",
+        desc: "African champion and prodigy",
+        country: "Egypt",
+        image: "img-habiba/hana_goda.jpg"
+    },
+    {
+        name: "Feryal Abdelaziz",
+        prog: "Karate",
+        desc: "First Egyptian female Olympic Gold medalist",
+        country: "Egypt",
+        image: "img-habiba/feryal_abdelaziz.jpg"
+    },
+    {
+        name: "Farida Osman",
+        prog: "Swimming",
+        desc: "Multiple World Championship medalist",
+        country: "Egypt",
+        image: "img-habiba/farida_osman.jpg"
+    }
+];
+
+document.getElementById("athletes-grid").innerHTML = `
+    <div class="athlete-card">
+        <img src="${athletes[0].image}" alt="${athletes[0].name}" class="athlete-img">
+        <div class="card-overlay"></div>
+      
+        <div class="card-content">
+            <div class="sport-badge">
+                <span class="badge-text">${athletes[0].prog}</span>
+            </div>
+            <h3 class="athlete-name">${athletes[0].name}</h3>
+            <p class="athlete-desc">${athletes[0].desc}</p>
+            <div class="card-footer">
+                <div class="country-info">
+                    <span>${athletes[0].country}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="athlete-card">
+        <img src="${athletes[1].image}" alt="${athletes[1].name}" class="athlete-img">
+        <div class="card-overlay"></div>
+       
+        <div class="card-content">
+            <div class="sport-badge">
+                <span class="badge-text">${athletes[1].prog}</span>
+            </div>
+            <h3 class="athlete-name">${athletes[1].name}</h3>
+            <p class="athlete-desc">${athletes[1].desc}</p>
+            <div class="card-footer">
+                <div class="country-info">
+                    <span>${athletes[1].country}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="athlete-card">
+        <img src="${athletes[2].image}" alt="${athletes[2].name}" class="athlete-img">
+        <div class="card-overlay"></div>
+       
+        <div class="card-content">
+            <div class="sport-badge">
+                <span class="badge-text">${athletes[2].prog}</span>
+            </div>
+            <h3 class="athlete-name">${athletes[2].name}</h3>
+            <p class="athlete-desc">${athletes[2].desc}</p>
+            <div class="card-footer">
+                <div class="country-info">
+                    <span>${athletes[2].country}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="athlete-card">
+        <img src="${athletes[3].image}" alt="${athletes[3].name}" class="athlete-img">
+        <div class="card-overlay"></div>
+      
+        <div class="card-content">
+            <div class="sport-badge">
+                <span class="badge-text">${athletes[3].prog}</span>
+            </div>
+            <h3 class="athlete-name">${athletes[3].name}</h3>
+            <p class="athlete-desc">${athletes[3].desc}</p>
+            <div class="card-footer">
+                <div class="country-info">
+                    <span>${athletes[3].country}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+` ;
 </script>
 
 </body>
