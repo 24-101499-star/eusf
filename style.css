@@ -41,7 +41,7 @@ button {
     gap: 18px;
     position: fixed;
     color: white;
-    z-index: 1;
+    z-index: 10000000000000000000000000000;
     animation: headerScroll linear both;
     animation-timeline: scroll(root);
     animation-range: 0px 100px;
@@ -599,6 +599,8 @@ button {
     text-align: center;
     color: #ffffff;
     position: relative;
+    position: sticky;
+    
 }
 
 
@@ -608,6 +610,9 @@ button {
     position: absolute;
     text-align: left;
      padding: 60px;
+     position: fixed;
+  
+    z-index: -1;
 
 }
 
@@ -719,3 +724,108 @@ h1{
     left: 100%;         
 }
 
+
+#sup-2 {
+    color: #ff1e27;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+
+#tit-2 {
+    color: #ffffff;
+    font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 0.95;     
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+
+.sports-section { 
+    position: relative;
+    z-index: 1;              
+    background-color: #0b0b0b; 
+    width: 100%;
+    height: 100vh;
+    padding: 150px  60px;
+   
+
+}
+
+
+
+.sportiii {
+
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 16px;
+    width: 100%;
+}
+
+
+.sportiii > div {
+    position: relative;
+    height: 380px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+
+.sportiii .card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+
+.sportiii .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+
+.sportiii .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 2;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+}
+
+.sportiii > div:hover {
+    border-color: #ff1e27;
+    transform: translateY(-6px);
+}
+
+.sportiii > div:hover .card-bg {
+    transform: scale(1.08);
+}

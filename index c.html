@@ -60,11 +60,22 @@
            <button id="btn-h" class="hero-btn"></button>
 
         </div>
-
+  <img src="img-habiba/" alt="">
 
     </section>
 
-    <section>
+    <section class="sports-section">
+
+        <h3 id="sup-2"></h3>
+        <h2 id="tit-2"></h2>
+
+        <div class="sportiii">
+            <div id="sports-container"></div>
+            <div id="sports-container-1"></div>
+            <div id="sports-container-2"></div>
+            <div id="sports-container-3"></div>
+            <div id="sports-container-4"></div>
+        </div>
 
 
       
@@ -130,6 +141,67 @@
 
 <script>
 
+let sportsData = [
+    { name: "FOOTBALL", img: "img-habiba/football.jpg" },
+    { name: "BASKETBALL", img: "img-habiba/Hoops & Hijab_ The Power of a Smile (1).jpg" },
+    { name: "VOLLEYBALL", img: "img-habiba/volleyball.jpg" },
+    { name: "SWIMMING", img: "img-habiba/swimming.jpg" },
+    { name: "ATHLETICS", img: "img-habiba/athletics.jpg" },
+    { name: "TENNIS", img: "img-habiba/tennis.jpg" }
+];
+
+document.getElementById("sports-container").innerHTML = `
+    <div class="card-bg" style="background-image: url('${sportsData[0].img}');"></div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+        <span class="sport-name">${sportsData[0].name}</span>
+        <span class="sport-arrow">→</span>
+    </div>
+`;
+
+document.getElementById("sports-container-1").innerHTML = `
+    <div class="card-bg" style="background-image: url('${sportsData[1].img}');"></div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+        <span class="sport-name">${sportsData[1].name}</span>
+        <span class="sport-arrow">→</span>
+    </div>
+`;
+    
+
+
+document.getElementById("sports-container-2").innerHTML = `
+    <div class="card-bg" style="background-image: url('${sportsData[2].img}');"></div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+        <span class="sport-name">${sportsData[2].name}</span>
+        <span class="sport-arrow">→</span>
+    </div>
+`;
+
+
+
+document.getElementById("sports-container-3").innerHTML = `
+    <div class="card-bg" style="background-image: url('${sportsData[3].img}');"></div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+        <span class="sport-name">${sportsData[3].name}</span>
+        <span class="sport-arrow">→</span>
+    </div>
+`;
+
+
+
+document.getElementById("sports-container-4").innerHTML = `
+    <div class="card-bg" style="background-image: url('${sportsData[4].img}');"></div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+        <span class="sport-name">${sportsData[4].name}</span>
+        <span class="sport-arrow">→</span>
+    </div>
+`;
+    document.getElementById("sup-2").innerText = "OUR SPORTS";
+    document.getElementById("tit-2").innerHTML = "DIFFERENT SPORTS.<br>ONE COMMUNITY.";
     document.getElementById("btn-h").innerText = "EXPLORE OUR SPORTS";
 
     document.getElementById("p-h").innerHTML = "Uniting Egypt’s universities through sports, building champions on<br> and off the field.";
