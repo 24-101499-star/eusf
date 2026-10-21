@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="event.css">
+<title>EUSF | Events</title>
+</head>
+
+<body class="events-page">
+
+<header class="header">
+
+<div class="logo">
+<img src="img/event34.png" alt="EUSF Logo">
+</div>
+
+<nav class="nav">
+<ul>
+<li><a href="#" id="nav-home"></a></li>
+<li><a href="index.html" id="nav-news"></a></li>
+<li><a href="events.html" id="nav-events"></a></li>
+<li><a href="#" id="nav-universities"></a></li>
+<li><a href="#" id="nav-matches"></a></li>
+<li><a href="#" id="nav-shield"></a></li>
+<li><a href="#" id="nav-medals"></a></li>
+<li><a href="#" id="nav-about"></a></li>
+<li><a href="#" id="nav-contact"></a></li>
+</ul>
+</nav>
+
+<button id="live-btn"></button>
+
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+<h1 id="hero-title"></h1>
+<p id="hero-description"></p>
+</div>
+
+<div class="breadcrumb">
+<a href="#" id="breadcrumb-home"></a>
+<span id="breadcrumb-events"></span>
+</div>
+
+</section>
+
+<!-- FEATURED EVENTS -->
+
+<section class="highlights">
+
+<div class="title">
+<span id="featured-label"></span>
+<h2 id="featured-title"></h2>
+<p id="featured-description"></p>
+<a href="#" id="featured-link"></a>
+</div>
+
+<ul class="highlight-cards">
+
+<li class="highlight-card first-card">
+<img src="img/event2.jpg" alt="Featured Event">
+<div class="highlight-info">
+<span id="featured-tag1"></span>
+<h3 id="featured-name1"></h3>
+<p id="featured-location1"></p>
+</div>
+</li>
+
+<li class="highlight-card">
+<img src="img/event 3.jpg" alt="Sports Agreement">
+<div class="highlight-info">
+<span id="featured-tag2"></span>
+<h3 id="featured-name2"></h3>
+<p id="featured-location2"></p>
+</div>
+</li>
+
+<li class="highlight-card">
+<img src="img/event.jpg" alt="Sports Workshop">
+<div class="highlight-info">
+<span id="featured-tag3"></span>
+<h3 id="featured-name3"></h3>
+<p id="featured-location3"></p>
+</div>
+</li>
+
+</ul>
+
+<div class="dots">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</section>
+
+<!-- FIND EVENTS -->
+
+<section class="find-events">
+
+<div class="find-header">
+
+<div class="title">
+<span id="explore-label"></span>
+<h2 id="explore-title"></h2>
+<p id="explore-description"></p>
+</div>
+
+<div class="filters">
+
+<input type="text" id="search">
+
+<div class="filter-options">
+
+<input type="date" id="date">
+
+<select id="category">
+<option id="category-all"></option>
+<option id="category-competitions"></option>
+<option id="category-workshops"></option>
+<option id="category-conferences"></option>
+</select>
+
+<select id="location">
+<option id="location-all"></option>
+<option id="location-cairo"></option>
+<option id="location-alex"></option>
+</select>
+
+<button type="button" id="filter-btn"></button>
+
+</div>
+</div>
+</div>
+
+<ul class="event-cards">
+
+<li class="event-card">
+<img src="img/5.jpeg" alt="Competitions">
+<div class="event-info">
+<span id="event-tag1"></span>
+<div class="event-details">
+<div class="event-date">
+<strong id="event-day1"></strong>
+<span id="event-month1"></span>
+<span id="event-year1"></span>
+</div>
+<div>
+<h3 id="event-title1"></h3>
+<p id="event-place1"></p>
+<a href="#" id="event-read1"></a>
+</div>
+</div>
+</div>
+</li>
+
+<li class="event-card">
+<img src="img/event.jpg" alt="Workshops">
+<div class="event-info">
+<span id="event-tag2"></span>
+<div class="event-details">
+<div class="event-date">
+<strong id="event-day2"></strong>
+<span id="event-month2"></span>
+<span id="event-year2"></span>
+</div>
+<div>
+<h3 id="event-title2"></h3>
+<p id="event-place2"></p>
+<a href="#" id="event-read2"></a>
+</div>
+</div>
+</div>
+</li>
+
+<li class="event-card">
+<img src="img/event 6.jpg" alt="Conferences">
+<div class="event-info">
+<span id="event-tag3"></span>
+<div class="event-details">
+<div class="event-date">
+<strong id="event-day3"></strong>
+<span id="event-month3"></span>
+<span id="event-year3"></span>
+</div>
+<div>
+<h3 id="event-title3"></h3>
+<p id="event-place3"></p>
+<a href="#" id="event-read3"></a>
+</div>
+</div>
+</div>
+</li>
+
+<li class="event-card">
+<img src="img/10.jpg" alt="Sports Events">
+<div class="event-info">
+<span id="event-tag4"></span>
+<div class="event-details">
+<div class="event-date">
+<strong id="event-day4"></strong>
+<span id="event-month4"></span>
+<span id="event-year4"></span>
+</div>
+<div>
+<h3 id="event-title4"></h3>
+<p id="event-place4"></p>
+<a href="#" id="event-read4"></a>
+</div>
+</div>
+</div>
+</li>
+
+</ul>
+
+</section>
+
+<!-- UPCOMING EVENTS -->
+
+<section class="upcoming">
+
+<div class="upcoming-left">
+
+<div class="title">
+<span id="upcoming-label"></span>
+<h2 id="upcoming-title"></h2>
+<p id="upcoming-description"></p>
+</div>
+
+<ul class="upcoming-cards">
+
+<li>
+<h3 id="upcoming-day1"></h3>
+<p id="upcoming-month1"></p>
+<h4 id="upcoming-name1"></h4>
+<span id="upcoming-place1"></span>
+</li>
+
+<li>
+<h3 id="upcoming-day2"></h3>
+<p id="upcoming-month2"></p>
+<h4 id="upcoming-name2"></h4>
+<span id="upcoming-place2"></span>
+</li>
+
+<li>
+<h3 id="upcoming-day3"></h3>
+<p id="upcoming-month3"></p>
+<h4 id="upcoming-name3"></h4>
+<span id="upcoming-place3"></span>
+</li>
+
+</ul>
+
+<a href="#" id="upcoming-link"></a>
+
+</div>
+
+<!-- SIMPLE CALENDAR -->
+
+<div class="calendar">
+
+<h3 id="calendar-title"></h3>
+<h4 id="calendar-month"></h4>
+
+<div class="days">
+
+<span>Sun</span>
+<span>Mon</span>
+<span>Tue</span>
+<span>Wed</span>
+<span>Thu</span>
+<span>Fri</span>
+<span>Sat</span>
+
+<span></span>
+<span></span>
+<span></span>
+<span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span class="active-day">9</span>
+<span>10</span>
+<span>11</span>
+
+<span>12</span>
+<span>13</span>
+<span>14</span>
+<span>15</span>
+<span>16</span>
+<span>17</span>
+<span>18</span>
+
+<span>19</span>
+<span>20</span>
+<span>21</span>
+<span>22</span>
+<span>23</span>
+<span>24</span>
+<span>25</span>
+
+<span>26</span>
+<span>27</span>
+<span>28</span>
+<span>29</span>
+<span>30</span>
+
+</div>
+</div>
+
+</section>
+
+<!-- PAST EVENTS -->
+
+<section class="past-events">
+
+<div class="title">
+<span id="past-label"></span>
+<h2 id="past-title"></h2>
+<p id="past-description"></p>
+<a href="#" id="past-link"></a>
+</div>
+
+<ul class="past-cards">
+
+<li>
+<img src="img/4.jpg" alt="Past Event">
+<span>▶</span>
+</li>
+
+<li>
+<img src="img/3.jpg" alt="Past Event">
+<span>▶</span>
+</li>
+
+<li>
+<img src="img/2.jpg" alt="Past Event">
+<span>▶</span>
+</li>
+
+<li>
+<img src="img/event2.jpg" alt="Past Event">
+<span>▶</span>
+</li>
+
+</ul>
+
+</section>
+
+<!-- JOIN -->
+
+<section class="join">
+
+<div class="join-text">
+<span id="join-label"></span>
+<h2 id="join-title"></h2>
+<p id="join-description"></p>
+</div>
+
+<ul class="join-benefits">
+<li><span>🏆</span><p id="benefit1"></p></li>
+<li><span>👥</span><p id="benefit2"></p></li>
+<li><span>☆</span><p id="benefit3"></p></li>
+<li><span>🎓</span><p id="benefit4"></p></li>
+</ul>
+
+<a href="#" id="register-btn"></a>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-logo">
+<img src="img/event34.png" alt="EUSF Logo">
+<p id="footer-description"></p>
+</div>
+
+<div class="footer-links">
+<h3 id="footer-links-title"></h3>
+<ul>
+<li><a href="#" id="footer-home"></a></li>
+<li><a href="#" id="footer-about"></a></li>
+<li><a href="index.html" id="footer-news"></a></li>
+<li><a href="events.html" id="footer-events"></a></li>
+<li><a href="#" id="footer-universities"></a></li>
+<li><a href="#" id="footer-contact"></a></li>
+</ul>
+</div>
+
+<div class="footer-contact">
+<h3 id="footer-contact-title"></h3>
+<p id="footer-address"></p>
+<p id="footer-phone"></p>
+<p id="footer-email"></p>
+</div>
+
+<div class="footer-map">
+<img src="img/locationjpg.jpg" alt="Location Map">
+</div>
+
+<div class="footer-social">
+<h3 id="footer-social-title"></h3>
+<ul>
+<li><a href="#" id="facebook"></a></li>
+<li><a href="#" id="twitter"></a></li>
+<li><a href="#" id="youtube"></a></li>
+<li><a href="#" id="instagram"></a></li>
+</ul>
+</div>
+
+</footer>
+
+<script>
+
+document.getElementById("nav-home").innerHTML = "Home";
+document.getElementById("nav-news").innerHTML = "News";
+document.getElementById("nav-events").innerHTML = "Events";
+document.getElementById("nav-universities").innerHTML = "Universities";
+document.getElementById("nav-matches").innerHTML = "Students Matches";
+document.getElementById("nav-shield").innerHTML = "General Shield";
+document.getElementById("nav-medals").innerHTML = "Universities Medals";
+document.getElementById("nav-about").innerHTML = "About";
+document.getElementById("nav-contact").innerHTML = "Contact";
+document.getElementById("live-btn").innerHTML = "Live ((•))";
+
+document.getElementById("hero-title").innerHTML = "EVENTS";
+document.getElementById("hero-description").innerHTML = "Upcoming and past events, competitions and activities organized by EUSF.";
+document.getElementById("breadcrumb-home").innerHTML = "Home";
+document.getElementById("breadcrumb-events").innerHTML = " › Events";
+
+document.getElementById("featured-label").innerHTML = "FEATURED EVENTS";
+document.getElementById("featured-title").innerHTML = "Highlights";
+document.getElementById("featured-description").innerHTML = "Don't miss the most important events and tournaments organized by EUSF this season.";
+document.getElementById("featured-link").innerHTML = "View All Events →";
+
+document.getElementById("featured-tag1").innerHTML = "Featured";
+document.getElementById("featured-tag2").innerHTML = "Featured";
+document.getElementById("featured-tag3").innerHTML = "Featured";
+
+document.getElementById("featured-name1").innerHTML = "الجامعات المصرية في البطولة العالمية للجامعات";
+document.getElementById("featured-name2").innerHTML = "توقيع بروتوكول تنظيم بطولة العالم للسباحة بالزعانف";
+document.getElementById("featured-name3").innerHTML = "دورة الإصابات الرياضية والتأهيل الحركي";
+
+document.getElementById("featured-location1").innerHTML = "Cairo, Egypt";
+document.getElementById("featured-location2").innerHTML = "Cairo, Egypt";
+document.getElementById("featured-location3").innerHTML = "Cairo, Egypt";
+
+document.getElementById("explore-label").innerHTML = "EXPLORE EVENTS";
+document.getElementById("explore-title").innerHTML = "Find Your Event";
+document.getElementById("explore-description").innerHTML = "Browse all events, filter by category, date or location, and discover what's next.";
+
+document.getElementById("search").placeholder = "Search for events...";
+document.getElementById("category-all").innerHTML = "Category";
+document.getElementById("category-competitions").innerHTML = "Competitions";
+document.getElementById("category-workshops").innerHTML = "Workshops";
+document.getElementById("category-conferences").innerHTML = "Conferences";
+document.getElementById("location-all").innerHTML = "Location";
+document.getElementById("location-cairo").innerHTML = "Cairo";
+document.getElementById("location-alex").innerHTML = "Alexandria";
+document.getElementById("filter-btn").innerHTML = "Filter";
+
+document.getElementById("event-tag1").innerHTML = "Competitions";
+document.getElementById("event-tag2").innerHTML = "Workshops";
+document.getElementById("event-tag3").innerHTML = "Conferences";
+document.getElementById("event-tag4").innerHTML = "Events";
+
+document.getElementById("event-title1").innerHTML = "الدوري الرياضي الأول للجامعات التكنولوجية الحكومية";
+document.getElementById("event-title2").innerHTML = "ورشة عمل حول إدارة الأنشطة الرياضية";
+document.getElementById("event-title3").innerHTML = "إطلاق مشروع بناء المواهب";
+document.getElementById("event-title4").innerHTML = "وزيرا التعليم العالي والشباب والرياضة يشهدان فعاليات البطولة";
+
+document.getElementById("event-day1").innerHTML = "07";
+document.getElementById("event-day2").innerHTML = "20";
+document.getElementById("event-day3").innerHTML = "21";
+document.getElementById("event-day4").innerHTML = "18";
+
+document.getElementById("event-month1").innerHTML = "JUL";
+document.getElementById("event-month2").innerHTML = "MAR";
+document.getElementById("event-month3").innerHTML = "NOV";
+document.getElementById("event-month4").innerHTML = "MAR";
+
+document.getElementById("event-year1").innerHTML = "2020";
+document.getElementById("event-year2").innerHTML = "2026";
+document.getElementById("event-year3").innerHTML = "2019";
+document.getElementById("event-year4").innerHTML = "2026";
+
+document.getElementById("event-place1").innerHTML = "Online Event";
+document.getElementById("event-place2").innerHTML = "Cairo, Egypt";
+document.getElementById("event-place3").innerHTML = "Cairo, Egypt";
+document.getElementById("event-place4").innerHTML = "Cairo, Egypt";
+
+document.getElementById("event-read1").innerHTML = "View Details →";
+document.getElementById("event-read2").innerHTML = "View Details →";
+document.getElementById("event-read3").innerHTML = "View Details →";
+document.getElementById("event-read4").innerHTML = "View Details →";
+
+document.getElementById("upcoming-label").innerHTML = "UPCOMING EVENTS";
+document.getElementById("upcoming-title").innerHTML = "Mark Your Calendar";
+document.getElementById("upcoming-description").innerHTML = "Check out the upcoming events and be part of our exciting journey.";
+
+document.getElementById("upcoming-day1").innerHTML = "05";
+document.getElementById("upcoming-day2").innerHTML = "12";
+document.getElementById("upcoming-day3").innerHTML = "20";
+
+document.getElementById("upcoming-month1").innerHTML = "APR 2026";
+document.getElementById("upcoming-month2").innerHTML = "APR 2026";
+document.getElementById("upcoming-month3").innerHTML = "APR 2026";
+
+document.getElementById("upcoming-name1").innerHTML = "بطولة الجامعات لكرة القدم";
+document.getElementById("upcoming-name2").innerHTML = "ملتقى الإبداع الرياضي";
+document.getElementById("upcoming-name3").innerHTML = "دورة السباحة الجامعية";
+
+document.getElementById("upcoming-place1").innerHTML = "Cairo, Egypt";
+document.getElementById("upcoming-place2").innerHTML = "Alexandria, Egypt";
+document.getElementById("upcoming-place3").innerHTML = "Cairo, Egypt";
+document.getElementById("upcoming-link").innerHTML = "View All →";
+
+document.getElementById("calendar-title").innerHTML = "Event Calendar";
+document.getElementById("calendar-month").innerHTML = "April 2026";
+
+document.getElementById("past-label").innerHTML = "PAST EVENTS";
+document.getElementById("past-title").innerHTML = "Moments That Made History";
+document.getElementById("past-description").innerHTML = "Explore the highlights of our past events and relive the best moments.";
+document.getElementById("past-link").innerHTML = "View Gallery →";
+
+document.getElementById("join-label").innerHTML = "GET INVOLVED";
+document.getElementById("join-title").innerHTML = "Join the Action";
+document.getElementById("join-description").innerHTML = "Be part of the Egyptian University Sports Federation and take your university sports experience to the next level.";
+
+document.getElementById("benefit1").innerHTML = "Compete in Tournaments";
+document.getElementById("benefit2").innerHTML = "Meet New People";
+document.getElementById("benefit3").innerHTML = "Gain New Skills";
+document.getElementById("benefit4").innerHTML = "Represent Your University";
+document.getElementById("register-btn").innerHTML = "Register Now →";
+
+document.getElementById("footer-description").innerHTML = "نلتقي بالأنشطة الرياضية بالجامعات المصرية";
+
+document.getElementById("footer-links-title").innerHTML = "Quick Links";
+document.getElementById("footer-home").innerHTML = "Home";
+document.getElementById("footer-about").innerHTML = "About Us";
+document.getElementById("footer-news").innerHTML = "Latest News";
+document.getElementById("footer-events").innerHTML = "Latest Events";
+document.getElementById("footer-universities").innerHTML = "Universities";
+document.getElementById("footer-contact").innerHTML = "Contact Us";
+
+document.getElementById("footer-contact-title").innerHTML = "Contact Us";
+document.getElementById("footer-address").innerHTML = "Al Manyal Al Gharbi, Giza, Giza Governorate";
+document.getElementById("footer-phone").innerHTML = "02 33367071";
+document.getElementById("footer-email").innerHTML = "eusf.org.eg@gmail.com";
+
+document.getElementById("footer-social-title").innerHTML = "Follow Us";
+document.getElementById("facebook").innerHTML = "f";
+document.getElementById("twitter").innerHTML = "X";
+document.getElementById("youtube").innerHTML = "▶";
+document.getElementById("instagram").innerHTML = "◎";
+
+</script>
+
+</body>
+</html>
