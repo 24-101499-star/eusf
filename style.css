@@ -619,17 +619,11 @@ button {
     --bg-main: #07070a;
     --bg-secondary: #0b0b0b;
     --bg-card: #121216;
-    
-  
     --text-main: #ffffff;
     --text-muted: #ffffff;
     --text-white: #ffffff;
-    
     --border-color: rgba(255, 255, 255, 0.15);
     --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-
-
-
     color: #ffffff;
 }
 
@@ -649,6 +643,23 @@ button {
     text-align: center;
     color: var(--text-white);
     position: relative;
+}
+
+
+.he-ro1 {
+    height: 100vh; 
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.375), rgba(0, 0, 0, 0.37)), url('img-habiba/Gemini_Generated_Image_3udelt3udelt3ude.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--text-white);
+    position: relative;
+   
 }
 
 .hero-content {
@@ -1361,3 +1372,194 @@ h1 {
 .theme-toggle-btn:active {
     transform: scale(0.95);
 }
+
+
+
+#hero-tag {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--accent-red);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+#hero-title {
+    font-family: var(--font-title);
+    font-size: 110px;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: 1px;
+    color: var(--text-white);
+    margin: 0 0 16px 0;
+    text-transform: uppercase;
+}
+
+
+.highlight-red {
+    color: var(--accent-red);
+}
+
+
+#hero-desc {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    max-width: 460px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+
+
+.contact-section {
+    background-color: var(--bg-main);
+    padding: 60px 5%;
+    color: var(--text-main);
+    font-family: var(--font-body);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+
+.section-tag {
+    color: var(--accent-red);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.form-title {
+    font-family: var(--font-title);
+    font-size: 42px;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+    color: var(--text-main);
+}
+
+.form-desc {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.map-wrapper {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    margin-bottom: 25px;
+}
+
+.info-grid {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.info-icon-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 13px;
+    color: var(--text-main);
+    margin-bottom: 3px;
+}
+
+.info-item p {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+
+.contact-right {
+    background-color: var(--bg-card);
+    padding: 35px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-main);
+    font-family: var(--font-body);
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-red);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--accent-red);
+    color: var(--text-white);
+    font-family: var(--font-title);
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
