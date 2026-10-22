@@ -48,6 +48,10 @@
 
     <section class="he-ro">
 
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+    <span id="theme-text">DARK</span>
+    </button>
+
         <div class="hero-content">
              
             <h1 id="hero-tit">  
@@ -110,7 +114,7 @@
 <section class="s-athletes">
 
   <section class="s-athletes">
-    <!-- الهيدر العلوي -->
+   
     <div class="athletes-header">
         <div class="header-left">
             <span id="athletes-tag" class="athletes-tag"></span>
@@ -119,71 +123,138 @@
         <a href="#" id="view-all-link" class="view-all-link"></a>
     </div>
 
+     
    
     <div id="athletes-grid" class="athletes-grid"></div>
 </section>
    
 </section>
+ 
+
+            <section class="s-partners">
+  
+    <div class="partners-header">
+        <span id="partners-tag" class="partners-tag">OFFICIAL PARTNERS & SPONSORS</span>
+        <h2 id="partners-title" class="partners-title">TRUSTED BY GLOBAL BRANDS</h2>
+        <p id="partners-desc" class="partners-desc">Partners who share our vision.</p>
+    </div>
 
 
-
-
-
-
-
-
-
+    <div class="partners-grid">
+        <div class="partner-item">
+            <img src="img-habiba/adidas-logo-footylogos.svg" alt="Adidas" />
+        </div>
+        <div class="partner-item">
+            <img src="img-habiba/Coca-Cola-Logo.wine.svg" alt="Coca-Cola" />
+        </div>
+        <div class="partner-item">
+            <img src="img-habiba/we-logo-png_seeklogo-467514.png" alt="WE" />
+        </div>
+        <div class="partner-item">
+            <img src="img-habiba/Vodafone-Logo.wine.png" alt="Vodafone" />
+        </div>
+        <div class="partner-item">
+            <img src="img-habiba/Puma-logo.png" alt="Puma" />
+        </div>
+        <div class="partner-item">
+            <img src="img-habiba/Nestlé-Logo.wine.svg" alt="Nestle" />
+        </div>
+    </div>
+</section>
 
 </main>
 
 
 <footer class="footer">
 
-    <div class="footer-logo">
-        <img src="img/event34.png" alt="EUSF Logo">
-        <p id="footer-description"></p>
-    </div>
+        <div class="footer-logo">
+            <img src="img/event34.png" alt="EUSF Logo">
+            <p id="footer-description"></p>
+        </div>
 
-    <div class="footer-links">
-        <h3 id="footer-links-title"></h3>
-        <ul>
-            <li><a href="#" id="footer-home"></a></li>
-            <li><a href="#" id="footer-about"></a></li>
-            <li><a href="index.html" id="footer-news"></a></li>
-            <li><a href="events.html" id="footer-events"></a></li>
-            <li><a href="#" id="footer-universities"></a></li>
-            <li><a href="#" id="footer-contact"></a></li>
-        </ul>
-    </div>
+        <div class="footer-links">
+            <h3 id="footer-links-title"></h3>
+            <ul>
+                <li><a href="#" id="footer-home"></a></li>
+                <li><a href="#" id="footer-about"></a></li>
+                <li><a href="index.html" id="footer-news"></a></li>
+                <li><a href="events.html" id="footer-events"></a></li>
+                <li><a href="#" id="footer-universities"></a></li>
+                <li><a href="#" id="footer-contact"></a></li>
+            </ul>
+        </div>
 
-    <div class="footer-contact">
-        <h3 id="footer-contact-title"></h3>
-        <p id="footer-address"></p>
-        <p id="footer-phone"></p>
-        <p id="footer-email"></p>
-    </div>
+        <div class="footer-contact">
+            <h3 id="footer-contact-title"></h3>
+            <p id="footer-address"></p>
+            <p id="footer-phone"></p>
+            <p id="footer-email"></p>
+        </div>
 
-    <div class="footer-map">
-        <img src="img/locationjpg.jpg" alt="Location Map">
-    </div>
+        <div class="footer-map">
+            <img src="img/locationjpg.jpg" alt="Location Map">
+        </div>
 
-    <div class="footer-social">
-        <h3 id="footer-social-title"></h3>
-        <ul>
-            <li><a href="#" id="facebook"></a></li>
-            <li><a href="#" id="twitter"></a></li>
-            <li><a href="#" id="youtube"></a></li>
-            <li><a href="#" id="instagram"></a></li>
-        </ul>
-    </div>
+        <div class="footer-social">
+            <h3 id="footer-social-title"></h3>
+            <ul>
+                <li><a href="#" id="facebook"></a></li>
+                <li><a href="#" id="twitter"></a></li>
+                <li><a href="#" id="youtube"></a></li>
+                <li><a href="#" id="instagram"></a></li>
+            </ul>
+        </div>
 
-</footer>
+    </footer>
 
-<!-- JAVASCRIPT -->
+
+    <script>
+        document.getElementById("footer-description").innerHTML = "نلتقي بالأنشطة الرياضية بالجامعات المصرية";
+
+        document.getElementById("footer-links-title").innerHTML = "Quick Links";
+        document.getElementById("footer-home").innerHTML = "Home";
+        document.getElementById("footer-about").innerHTML = "About Us";
+        document.getElementById("footer-news").innerHTML = "Latest News";
+        document.getElementById("footer-events").innerHTML = "Latest Events";
+        document.getElementById("footer-universities").innerHTML = "Universities";
+        document.getElementById("footer-contact").innerHTML = "Contact Us";
+
+        document.getElementById("footer-contact-title").innerHTML = "Contact Us";
+        document.getElementById("footer-address").innerHTML = "Al Manyal Al Gharbi, Giza, Giza Governorate";
+        document.getElementById("footer-phone").innerHTML = "02 33367071";
+        document.getElementById("footer-email").innerHTML = "eusf.org.eg@gmail.com";
+
+        document.getElementById("footer-social-title").innerHTML = "Follow Us";
+        document.getElementById("facebook").innerHTML = "f";
+        document.getElementById("twitter").innerHTML = "X";
+        document.getElementById("youtube").innerHTML = "▶";
+        document.getElementById("instagram").innerHTML = "◎";
+    </script>
+
+
 
 <script>
 
-    
+    let themeBtn = document.getElementById("theme-toggle");
+let themeText = document.getElementById("theme-text");
+
+themeBtn.addEventListener("click", function () {
+   
+    document.body.classList.toggle("dark-mode");
+
+  
+    if (document.body.classList.contains("dark-mode")) {
+        themeText.innerText = "LIGHT"; 
+        themeBtn.classList.add("is-dark");
+    } else {
+        themeText.innerText = "DARK"; // 
+        themeBtn.classList.remove("is-dark"); 
+    }
+});
+
+    document.getElementById("partners-tag").innerText = "OFFICIAL PARTNERS & SPONSORS";
+document.getElementById("partners-title").innerText = "TRUSTED BY GLOBAL BRANDS";
+document.getElementById("partners-desc").innerText = "Partners who share our vision.";
 
 
 
@@ -472,24 +543,7 @@ document.getElementById("subscribe-btn").innerHTML = "Subscribe";
 
 document.getElementById("footer-description").innerHTML = "نلتقي بالأنشطة الرياضية بالجامعات المصرية";
 
-document.getElementById("footer-links-title").innerHTML = "Quick Links";
-document.getElementById("footer-home").innerHTML = "Home";
-document.getElementById("footer-about").innerHTML = "About Us";
-document.getElementById("footer-news").innerHTML = "Latest News";
-document.getElementById("footer-events").innerHTML = "Latest Events";
-document.getElementById("footer-universities").innerHTML = "Universities";
-document.getElementById("footer-contact").innerHTML = "Contact Us";
 
-document.getElementById("footer-contact-title").innerHTML = "Contact Us";
-document.getElementById("footer-address").innerHTML = "Al Manyal Al Gharbi, Giza, Giza Governorate";
-document.getElementById("footer-phone").innerHTML = "02 33367071";
-document.getElementById("footer-email").innerHTML = "eusf.org.eg@gmail.com";
-
-document.getElementById("footer-social-title").innerHTML = "Follow Us";
-document.getElementById("facebook").innerHTML = "f";
-document.getElementById("twitter").innerHTML = "X";
-document.getElementById("youtube").innerHTML = "▶";
-document.getElementById("instagram").innerHTML = "◎";
 
 </script>
 
